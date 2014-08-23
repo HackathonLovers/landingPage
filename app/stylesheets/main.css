@@ -1,0 +1,111 @@
+@import url("//fonts.googleapis.com/css?family=Open+Sans");
+body {
+  font-family: 'Open Sans';
+  font-size: 14px;
+  background-color: #eaeaea;
+}
+.Container {
+  margin: 0 auto;
+  width: 1024px;
+  background-color: #fff;
+}
+.Header {
+  background: url("../img/bg_header.jpg") no-repeat;
+  background-size: 1024px 498px;
+  height: 498px;
+  padding: 2em 4em 0 4em;
+  color: #f3f3f3;
+}
+.Header-logo {
+  display: inline-block;
+  width: 300px;
+  text-indent: -9999px;
+  background: url("../img/logo.png") no-repeat;
+  margin: 0;
+  padding: 0;
+}
+.Header-nav ul {
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+  list-style-type: none;
+  float: right;
+}
+.Header-nav ul li {
+  display: inline-block;
+  margin: 1em;
+}
+.Header-nav ul li a {
+  margin: 0 0 1em 0;
+  padding: 0 0 1em 0;
+  color: #f3f3f3;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.Header-nav ul li a:hover {
+  border-bottom: 2px solid #f3f3f3;
+}
+.Header-copy {
+  width: 50%;
+  padding: 2em 0;
+}
+.Contact {
+  background: url("../img/bg_footer.jpg") no-repeat;
+  background-size: 1024px 432px;
+  height: 432px;
+  color: #f3f3f3;
+  padding: 2em 4em 0 4em;
+}
+.Contact h2 {
+  text-align: center;
+  color: #222;
+}
+.Contact-copy {
+  width: 50%;
+  padding: 2em 0;
+}
+.Team {
+  background: #fff;
+  text-align: center;
+}
+.Team-figure {
+  display: inline-block;
+}
+.Team-figure img {
+  width: 220px;
+}
+.Team-twitter,
+.Team-name {
+  display: inline-block;
+}
+.Footer {
+  height: 50px;
+  line-height: 50px;
+}
+.Footer-copy {
+  float: right;
+}
+.btn {
+  border: 1px solid #f3f3f3;
+  border-radius: 5px;
+  color: #f3f3f3;
+  text-decoration: none;
+  display: inline-block;
+  text-align: center;
+  padding: 0.75em 10em;
+}
+.btn:hover {
+  color: #f26152;
+  background-color: #f3f3f3;
+}
+.btn-black {
+  border: 0;
+  background: #222;
+  padding: 0.75em 8em;
+}
+.text-red {
+  color: #f26152;
+}
+.text-white {
+  color: #f3f3f3;
+}

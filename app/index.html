@@ -10,8 +10,11 @@
 
     <!-- build:css css/style.min.css -->
     <!-- bower:css -->
+    <link rel="stylesheet" href="lib/normalize-css/normalize.css" />
+    <link rel="stylesheet" href="lib/fontawesome/css/font-awesome.css" />
     <!-- endbower -->
     <!-- inject:css -->
+    <link rel="stylesheet" href="/stylesheets/main.css">
     <!-- endinject -->
     <!-- endbuild -->
   </head>
@@ -23,52 +26,72 @@
         Para mejorar la experiencia..
       </p>
     <![endif]-->
-    <header>
-        <h1>Hackathon Lovers</h1>
-        <nav>
-            <ul>
-                <li>Únete</li>
-                <li>Equipo</li>
-                <li>Contacto</li>
-            </ul> 
-        </nav>
-        <p>
-            Hackathon Lovers es un grupo creado por y para amantes de hackathones. La idea del grupo es juntarse de vez en cuando para realizar un hackathon entre todos los participantes. La intención es no discriminar ningún lenguaje de programación, y que los hackathones sirvan para aprender nuevas herramientas y nuevos procedimientos, a la vez que se afiancen lazos con otros profesionales.
-        </p>
-        <a href="//www.meetup.com/Hackathon-Lovers/">Únete a nuestro MeetUp</a>    
-    </header>
-    <section>
-        <h2>¿Quiénes Somos?</h2>
-        <figure>
-            <img src="img/pic_adolfo.png" alt="Adolfo Sanz de Diego"/>
-            <figCaption>
-                <span>Adolfo Sanz de Diego</span>
-                <a href="//twitter.com/asanzdiego">@asanzdiego</a>
-            </figCaption>
-        </figure>
-        <figure>
-            <img src="img/pic_jorge.png" alt="Adolfo Sanz de Diego"/>
-            <figCaption>
-                <span>Adolfo Sanz de Diego</span>
-                <a href="//twitter.com/jorgeas80">@jorgeas80</a>
-            </figCaption>
-        </figure>
-        <figure>
-            <img src="img/pic_carlos.png" alt="Adolfo Sanz de Diego"/>
-            <figCaption>
-                <span>Carlos Azaustre</span>
-                <a href="//twitter.com/asanzdiego">@carlosazaustre</a>
-            </figCaption>
-        </figure>
-    </section>
-    <section>
-        <p>¿Quieres organizar un hackathon? ¿Organizas un evento
-            y necesitas colaboradores? Contacta con nosotros con
-            nosotros con cualquier duda que tengas y te responderemos
-            lo más pronto posible.
-        </p>
-        <a href="mailto:hackathonlovers@gmail.com">Escríbenos un correo electrónico</a>
-    </section>
+    <div class="Container">
+
+        <header class="Header">
+            <nav class="Header-nav">
+                <h1 class="Header-logo">Hackathon Lovers</h1>
+                <ul>
+                    <li><a href="#join">Únete</a></li>
+                    <li><a href="#team">Equipo</a></li>
+                    <li><a href="#contact">Contacto</a></li>
+                </ul> 
+            </nav>
+            <p class="Header-copy">
+                Hackathon Lovers es un grupo creado por y para amantes de hackathones. La idea del grupo es juntarse de vez en cuando para realizar un hackathon entre todos los participantes. La intención es no discriminar ningún lenguaje de programación, y que los hackathones sirvan para aprender nuevas herramientas y nuevos procedimientos, a la vez que se afiancen lazos con otros profesionales.
+            </p>
+            <a class="btn" href="//www.meetup.com/Hackathon-Lovers/">Únete a nuestro MeetUp</a>    
+        </header>
+
+        <section class="Team">
+            <h2>¿<span class="text-red">Quiénes</span> Somos?</h2>
+            <figure class="Team-figure">
+                <img src="img/pic_adolfo.png" alt="Adolfo Sanz de Diego"/>
+                <figCaption class="Team-figure-caption">
+                    <span class="Team-name">Adolfo Sanz de Diego</span><br>
+                    <a class="Team-twitter" href="//twitter.com/asanzdiego">@asanzdiego</a>
+                </figCaption>
+            </figure>
+            <figure class="Team-figure">
+                <img src="img/pic_jorge.png" alt="Adolfo Sanz de Diego"/>
+                <figCaption class="Team-figure-caption">
+                    <span class="Team-name">Adolfo Sanz de Diego</span><br>
+                    <a class="Team-twitter" href="//twitter.com/jorgeas80">@jorgeas80</a>
+                </figCaption>
+            </figure>
+            <figure class="Team-figure">
+                <img src="img/pic_carlos.png" alt="Adolfo Sanz de Diego"/>
+                <figCaption class="Team-figure-caption">
+                    <span class="Team-name">Carlos Azaustre</span><br>
+                    <a class="Team-twitter" href="//twitter.com/asanzdiego">@carlosazaustre</a>
+                </figCaption>
+            </figure>
+        </section>
+
+        <section class="Contact">
+            <h2>¿Quieres <span class="text-red">contactar</span> con nosotros?</h2>
+            <p class="Contact-copy" >¿Quieres organizar un hackathon? ¿Organizas un evento
+                y necesitas colaboradores? Contacta con nosotros con
+                nosotros con cualquier duda que tengas y te responderemos
+                lo más pronto posible.
+            </p>
+            <a class="btn btn-black" href="mailto:hackathonlovers@gmail.com">Escríbenos un correo electrónico</a>
+        </section>
+
+        <footer class="Footer">
+            <div class="Footer-social">
+                <a href="http://twitter.com/HackathonLovers"><span></span></a>
+                <a href="http://hackathonlovers.tumblr.com/"><span></span></a>
+                <a href="http://www.linkedin.com/groups/Hackathon-Lovers-6510465"><span></span></a>
+                <a href="http://www.flickr.com/photos/114271676@N05/sets/"><span></span></a>
+                <a href="http://www.youtube.com/channel/UCRwSe7jK-y62BMvIiNBV1qw"><span></span></a>
+                <a href="http://plus.google.com/110220986282574906500/"><span></span></a>
+            </div>
+            <div class="Footer-copy">
+                Hecho con <span></span> en Madrid.
+            </div>
+        </footer>
+    </div>
     <!-- Google Analytics: Cambia UA-XXXXX-X por el ID de tu sitio -->
     <script>
         (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=

@@ -1,5 +1,8 @@
 {
-	"name": "HackathonLovers",
-	"version": "2.0.0",
-	"dependencies": {}
+  "name": "HackathonLovers",
+  "version": "2.0.0",
+  "dependencies": {
+    "normalize-css": "~3.0.1",
+    "fontawesome": "~4.1.0"
+  }
 }
