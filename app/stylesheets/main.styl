@@ -18,8 +18,8 @@ body
 	background-size cover
 
 .Header
-	height 498px
-	width 1024px
+	height 420px
+	//width 1024px
 	margin 0 auto
 	padding 2em 4em 0 4em
 	color hl_white
@@ -30,14 +30,16 @@ body
 	width 300px
 	text-indent -9999px
 	background url('../img/logo.png') no-repeat
-	margin 0
-	padding 0
+	margin 0 0 1em 0
+	position absolute
+	right 0
 
 .Header-nav
 	ul 
+		display none
 		margin 0 
 		padding 0 
-		display inline-block
+		//display inline-block
 		list-style-type none
 		float right
 		
@@ -54,10 +56,12 @@ body
 					border-bottom 2px solid hl_white
 
 .Header-copy
-	width 50%
+	//width 50%
 	padding 2em 0
+	text-align center
 
 .Header-figure-laptop
+	display none
 	position relative
 	left 524px
 	bottom 5em
@@ -67,7 +71,7 @@ body
 
 .Contact
 	margin 0 auto
-	width 1024px
+	//width 1024px
 	height 432px
 	color hl_white
 	padding 2em 4em 0 4em
@@ -76,7 +80,7 @@ body
 		color hl_white
 
 .Contact-copy
-	width 50%
+	//width 50%
 	padding 2em 0
 
 .Team
@@ -105,19 +109,20 @@ body
 		font-weight bold
 
 .Footer 
+	text-align center
 	margin 0 auto
-	width 1024px
-	height 50px
+	//width 1024px
+	height 60px
 	line-height 50px
 
 .Footer-copy
-	float right
+	//float right
 	line-height 2em
 	margin 0 2em 0 0
 
 .Footer-social
-	float left
-	margin 0 0 0 3em
+	//float left
+	margin 0
 	a
 		color hl_red
 		text-decoration none
@@ -133,7 +138,7 @@ body
 	text-decoration none
 	display inline-block
 	text-align center
-	padding .75em 10em
+	padding .75em 4em
 	transition 1s background-color
 	transition 1s color
 	&:hover
@@ -143,7 +148,7 @@ body
 .btn-black
 	border 0
 	background hl_black
-	padding .75em 8em
+	padding .75em 3em
 
 .text-red
 	color hl_red

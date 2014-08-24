@@ -16,8 +16,7 @@ body {
   background-size: cover;
 }
 .Header {
-  height: 498px;
-  width: 1024px;
+  height: 420px;
   margin: 0 auto;
   padding: 2em 4em 0 4em;
   color: #f3f3f3;
@@ -27,13 +26,14 @@ body {
   width: 300px;
   text-indent: -9999px;
   background: url("../img/logo.png") no-repeat;
-  margin: 0;
-  padding: 0;
+  margin: 0 0 1em 0;
+  position: absolute;
+  right: 0;
 }
 .Header-nav ul {
+  display: none;
   margin: 0;
   padding: 0;
-  display: inline-block;
   list-style-type: none;
   float: right;
 }
@@ -52,10 +52,11 @@ body {
   border-bottom: 2px solid #f3f3f3;
 }
 .Header-copy {
-  width: 50%;
   padding: 2em 0;
+  text-align: center;
 }
 .Header-figure-laptop {
+  display: none;
   position: relative;
   left: 524px;
   bottom: 5em;
@@ -66,7 +67,6 @@ body {
 }
 .Contact {
   margin: 0 auto;
-  width: 1024px;
   height: 432px;
   color: #f3f3f3;
   padding: 2em 4em 0 4em;
@@ -76,7 +76,6 @@ body {
   color: #f3f3f3;
 }
 .Contact-copy {
-  width: 50%;
   padding: 2em 0;
 }
 .Team {
@@ -107,19 +106,17 @@ body {
   font-weight: bold;
 }
 .Footer {
+  text-align: center;
   margin: 0 auto;
-  width: 1024px;
-  height: 50px;
+  height: 60px;
   line-height: 50px;
 }
 .Footer-copy {
-  float: right;
   line-height: 2em;
   margin: 0 2em 0 0;
 }
 .Footer-social {
-  float: left;
-  margin: 0 0 0 3em;
+  margin: 0;
 }
 .Footer-social a {
   color: #f26152;
@@ -137,7 +134,7 @@ body {
   text-decoration: none;
   display: inline-block;
   text-align: center;
-  padding: 0.75em 10em;
+  padding: 0.75em 4em;
   transition: 1s background-color;
   transition: 1s color;
 }
@@ -148,7 +145,7 @@ body {
 .btn-black {
   border: 0;
   background: #222;
-  padding: 0.75em 8em;
+  padding: 0.75em 3em;
 }
 .text-red {
   color: #f26152;
