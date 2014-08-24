@@ -119,6 +119,8 @@ gulp.task('copy', function() {
     .pipe(gulp.dest('./dist'));
   gulp.src('./app/lib/fontawesome/fonts/**')
     .pipe(gulp.dest('./dist/fonts'));
+  gulp.src('./app/img')
+    .pipe(gulp.dest('./dist'));
 });
 
 // Vigila cambios que se produzcan en el código
@@ -131,4 +133,4 @@ gulp.task('watch', function() {
 });
 
 gulp.task('default', ['server', 'inject', 'wiredep', 'watch']);
-gulp.task('build', ['templates', 'compress', 'copy', 'uncss']);
+gulp.task('build', ['compress', 'copy', 'uncss']);

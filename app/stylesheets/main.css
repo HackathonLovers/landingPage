@@ -16,19 +16,33 @@ body {
   background-size: cover;
 }
 .Header {
-  height: 420px;
+  text-align: center;
+  height: auto;
   margin: 0 auto;
-  padding: 2em 4em 0 4em;
+  padding: 2em 4em;
   color: #f3f3f3;
+}
+@media screen and (min-width: 720px) {
+  .Header {
+    text-align: left;
+    height: 300px;
+    width: 720px;
+  }
 }
 .Header-logo {
   display: inline-block;
   width: 300px;
   text-indent: -9999px;
   background: url("../img/logo.png") no-repeat;
-  margin: 0 0 1em 0;
+  margin: 0 0 1em 1em;
   position: absolute;
-  right: 0;
+  left: 0;
+}
+@media screen and (min-width: 720px) {
+  .Header-logo {
+    position: relative;
+    margin: 0;
+  }
 }
 .Header-nav ul {
   display: none;
@@ -36,6 +50,11 @@ body {
   padding: 0;
   list-style-type: none;
   float: right;
+}
+@media screen and (min-width: 720px) {
+  .Header-nav ul {
+    display: inline-block;
+  }
 }
 .Header-nav ul li {
   display: inline-block;
@@ -53,19 +72,30 @@ body {
 }
 .Header-copy {
   padding: 2em 0;
-  text-align: center;
+}
+@media screen and (min-width: 720px) {
+  .Header-copy {
+    width: 50%;
+    padding: 0.75em;
+  }
 }
 .Header-figure-laptop {
   display: none;
-  position: relative;
-  left: 524px;
-  bottom: 5em;
-  width: 500px;
 }
-.Header-figure-laptop img {
-  width: 100%;
+@media screen and (min-width: 720px) {
+  .Header-figure-laptop {
+    display: inline-block;
+    position: relative;
+    left: 50%;
+    bottom: 12em;
+    width: 50%;
+  }
+  .Header-figure-laptop img {
+    width: 100%;
+  }
 }
 .Contact {
+  text-align: center;
   margin: 0 auto;
   height: 432px;
   color: #f3f3f3;
@@ -75,8 +105,19 @@ body {
   text-align: center;
   color: #f3f3f3;
 }
+@media screen and (min-width: 720px) {
+  .Contact {
+    text-align: left;
+    width: 720px;
+  }
+}
 .Contact-copy {
   padding: 2em 0;
+}
+@media screen and (min-width: 720px) {
+  .Contact-copy {
+    width: 50%;
+  }
 }
 .Team {
   margin: 0 auto;
@@ -109,11 +150,21 @@ body {
   text-align: center;
   margin: 0 auto;
   height: 60px;
-  line-height: 50px;
+  line-height: 60px;
+}
+@media screen and (min-width: 720px) {
+  .Footer {
+    text-align: left;
+    width: 720px;
+  }
 }
 .Footer-copy {
-  line-height: 2em;
   margin: 0 2em 0 0;
+}
+@media screen and (min-width: 720px) {
+  .Footer-copy {
+    float: right;
+  }
 }
 .Footer-social {
   margin: 0;
@@ -127,6 +178,11 @@ body {
 .Footer-social a:hover {
   color: #222;
 }
+@media screen and (min-width: 720px) {
+  .Footer-social {
+    float: left;
+  }
+}
 .btn {
   border: 1px solid #f3f3f3;
   border-radius: 5px;
@@ -137,10 +193,16 @@ body {
   padding: 0.75em 4em;
   transition: 1s background-color;
   transition: 1s color;
+  margin: 0 auto;
 }
 .btn:hover {
   color: #f26152;
   background-color: #f3f3f3;
+}
+@media screen and (min-width: 720px) {
+  .btn {
+    padding: 0.75em 8em;
+  }
 }
 .btn-black {
   border: 0;

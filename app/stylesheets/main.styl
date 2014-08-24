@@ -18,11 +18,15 @@ body
 	background-size cover
 
 .Header
-	height 420px
-	//width 1024px
+	text-align center
+	height auto
 	margin 0 auto
-	padding 2em 4em 0 4em
+	padding 2em 4em
 	color hl_white
+	@media screen and (min-width 720px)
+		text-align left
+		height 300px
+		width 720px
 
 	
 .Header-logo
@@ -30,18 +34,24 @@ body
 	width 300px
 	text-indent -9999px
 	background url('../img/logo.png') no-repeat
-	margin 0 0 1em 0
+	margin 0 0 1em 1em
 	position absolute
-	right 0
+	left 0
+	@media screen and (min-width 720px)
+		position relative
+		margin 0
+
 
 .Header-nav
 	ul 
 		display none
 		margin 0 
 		padding 0 
-		//display inline-block
 		list-style-type none
 		float right
+		
+		@media screen and (min-width 720px)
+			display inline-block
 		
 		li 
 			display inline-block
@@ -56,36 +66,44 @@ body
 					border-bottom 2px solid hl_white
 
 .Header-copy
-	//width 50%
 	padding 2em 0
-	text-align center
+
+	@media screen and (min-width 720px)
+		width 50%
+		padding .75em
 
 .Header-figure-laptop
 	display none
-	position relative
-	left 524px
-	bottom 5em
-	width 500px
-	img
-		width 100%
+	@media screen and (min-width 720px)
+		display inline-block
+		position relative
+		left 50%
+		bottom 12em
+		width 50%
+		img
+			width 100%
+
 
 .Contact
+	text-align center
 	margin 0 auto
-	//width 1024px
 	height 432px
 	color hl_white
 	padding 2em 4em 0 4em
 	h2
 		text-align center 
 		color hl_white
+	@media screen and (min-width 720px)
+		text-align left
+		width 720px
 
 .Contact-copy
-	//width 50%
 	padding 2em 0
+	@media screen and (min-width 720px)
+		width 50%
 
 .Team
 	margin 0 auto
-	//width 1024px
 	background #fff
 	text-align center
 
@@ -111,17 +129,18 @@ body
 .Footer 
 	text-align center
 	margin 0 auto
-	//width 1024px
 	height 60px
-	line-height 50px
+	line-height 60px
+	@media screen and (min-width 720px)
+		text-align left
+		width 720px
 
 .Footer-copy
-	//float right
-	line-height 2em
 	margin 0 2em 0 0
+	@media screen and (min-width 720px)
+		float right
 
 .Footer-social
-	//float left
 	margin 0
 	a
 		color hl_red
@@ -130,6 +149,8 @@ body
 		transition 1s color
 		&:hover
 			color hl_black
+	@media screen and (min-width 720px)
+		float left
 
 .btn
 	border 1px solid hl_white
@@ -141,9 +162,13 @@ body
 	padding .75em 4em
 	transition 1s background-color
 	transition 1s color
+	margin 0 auto
 	&:hover
 		color hl_red
 		background-color hl_white
+	@media screen and (min-width 720px)
+		padding .75em 8em
+
 
 .btn-black
 	border 0
