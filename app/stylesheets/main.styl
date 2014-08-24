@@ -4,7 +4,7 @@
 body
 	font-family 'Open Sans'
 	font-size 14px
-	background-color #eaeaea
+	background-color #666
 
 .Container
 	margin 0 auto
@@ -59,7 +59,7 @@ body
 	padding 2em 4em 0 4em
 	h2
 		text-align center 
-		color hl_black
+		color hl_white
 
 .Contact-copy
 	width 50%
@@ -77,12 +77,36 @@ body
 .Team-twitter, .Team-name
 	display inline-block
 
+.Team-name
+	font-weight bold
+	font-size 1.2em
+
+.Team-twitter
+	color hl_red
+	text-decoration none
+	font-size 1.2em
+	&:hover
+		font-weight bold
+
 .Footer 
 	height 50px
 	line-height 50px
 
 .Footer-copy
 	float right
+	line-height 2em
+	margin 0 2em 0 0
+
+.Footer-social
+	float left
+	margin 0 0 0 3em
+	a
+		color hl_red
+		text-decoration none
+		padding 0 1em
+		transition 1s color
+		&:hover
+			color hl_black
 
 .btn
 	border 1px solid hl_white
@@ -92,6 +116,8 @@ body
 	display inline-block
 	text-align center
 	padding .75em 10em
+	transition 1s background-color
+	transition 1s color
 	&:hover
 		color hl_red
 		background-color hl_white
@@ -105,5 +131,7 @@ body
 	color hl_red
 .text-white
 	color hl_white
+.text-black
+	color hl_black
 
 

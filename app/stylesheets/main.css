@@ -2,7 +2,7 @@
 body {
   font-family: 'Open Sans';
   font-size: 14px;
-  background-color: #eaeaea;
+  background-color: #666;
 }
 .Container {
   margin: 0 auto;
@@ -58,7 +58,7 @@ body {
 }
 .Contact h2 {
   text-align: center;
-  color: #222;
+  color: #f3f3f3;
 }
 .Contact-copy {
   width: 50%;
@@ -78,12 +78,39 @@ body {
 .Team-name {
   display: inline-block;
 }
+.Team-name {
+  font-weight: bold;
+  font-size: 1.2em;
+}
+.Team-twitter {
+  color: #f26152;
+  text-decoration: none;
+  font-size: 1.2em;
+}
+.Team-twitter:hover {
+  font-weight: bold;
+}
 .Footer {
   height: 50px;
   line-height: 50px;
 }
 .Footer-copy {
   float: right;
+  line-height: 2em;
+  margin: 0 2em 0 0;
+}
+.Footer-social {
+  float: left;
+  margin: 0 0 0 3em;
+}
+.Footer-social a {
+  color: #f26152;
+  text-decoration: none;
+  padding: 0 1em;
+  transition: 1s color;
+}
+.Footer-social a:hover {
+  color: #222;
 }
 .btn {
   border: 1px solid #f3f3f3;
@@ -93,6 +120,8 @@ body {
   display: inline-block;
   text-align: center;
   padding: 0.75em 10em;
+  transition: 1s background-color;
+  transition: 1s color;
 }
 .btn:hover {
   color: #f26152;
@@ -108,4 +137,7 @@ body {
 }
 .text-white {
   color: #f3f3f3;
+}
+.text-black {
+  color: #222;
 }
