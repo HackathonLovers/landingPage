@@ -98,9 +98,8 @@ body {
 .Contact {
   text-align: center;
   margin: 0 auto;
-  height: 432px;
   color: #f3f3f3;
-  padding: 2em 4em 0 4em;
+  padding: 2em 4em;
 }
 .Contact h2 {
   text-align: center;
@@ -123,7 +122,7 @@ body {
 }
 .Team {
   margin: 0 auto;
-  padding: 3em;
+  padding: 3em 0;
   background: #fff;
   text-align: center;
 }
@@ -175,7 +174,7 @@ body {
 .Footer-social a {
   color: #f26152;
   text-decoration: none;
-  padding: 0 1em;
+  padding: 1em 1.5em;
   transition: 1s color;
 }
 .Footer-social a:hover {
