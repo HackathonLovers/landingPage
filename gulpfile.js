@@ -119,6 +119,8 @@ gulp.task('copy', function() {
   gulp.src('./app/index.html')
     .pipe(useref())
     .pipe(gulp.dest('./dist'));
+  gulp.src('./app/favicon.ico')
+    .pipe(gulp.dest('./dist'));
   //gulp.src('./app/lib/fontawesome/fonts/**')
     //.pipe(gulp.dest('./dist/fonts'));
   gulp.src('./app/img/**')
