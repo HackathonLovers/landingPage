@@ -13,6 +13,8 @@ var gulp      = require('gulp'),
     useref    = require('gulp-useref'),
     uglify    = require('gulp-uglify'),
     uncss     = require('gulp-uncss'),
+    imagemin  = require('gulp-imagemin'),
+    pngcrush  = require('imagemin-pngcrush'),
     historyApiFallback = require('connect-history-api-fallback');
 
 // Servidor web de desarrollo
@@ -117,9 +119,20 @@ gulp.task('copy', function() {
   gulp.src('./app/index.html')
     .pipe(useref())
     .pipe(gulp.dest('./dist'));
-  gulp.src('./app/lib/fontawesome/fonts/**')
-    .pipe(gulp.dest('./dist/fonts'));
+  //gulp.src('./app/lib/fontawesome/fonts/**')
+    //.pipe(gulp.dest('./dist/fonts'));
   gulp.src('./app/img/**')
+    .pipe(gulp.dest('./dist/img'));
+});
+
+// Optimiza imágenes
+gulp.task('images', function() {
+  gulp.src('./app/img/*.{png,jpg,jpeg,gif,svg}')
+    .pipe(imagemin({
+      progressive: true,
+      svgoPlugins: [{removeViewBox: false}],
+      use: [pngcrush()]
+    }))
     .pipe(gulp.dest('./dist/img'));
 });
 
@@ -133,4 +146,4 @@ gulp.task('watch', function() {
 });
 
 gulp.task('default', ['server', 'inject', 'wiredep', 'watch']);
-gulp.task('build', ['compress', 'copy', 'uncss']);
+gulp.task('build', ['images', 'compress', 'copy', 'uncss']);
