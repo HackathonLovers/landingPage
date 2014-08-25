@@ -106,7 +106,7 @@ gulp.task('compress', function() {
 gulp.task('uncss', function() {
   gulp.src('./dist/css/style.min.css')
     .pipe(uncss({
-      html: ['./app/index.html', './app/views/post-list.tpl.html', './app/views/post-detail.tpl.html']
+      html: ['./app/index.html']
     }))
     .pipe(gulp.dest('./dist/css'));
 });
@@ -119,8 +119,8 @@ gulp.task('copy', function() {
     .pipe(gulp.dest('./dist'));
   gulp.src('./app/lib/fontawesome/fonts/**')
     .pipe(gulp.dest('./dist/fonts'));
-  gulp.src('./app/img')
-    .pipe(gulp.dest('./dist'));
+  gulp.src('./app/img/**')
+    .pipe(gulp.dest('./dist/img'));
 });
 
 // Vigila cambios que se produzcan en el código
