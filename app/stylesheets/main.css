@@ -325,6 +325,7 @@ body {
 }
 .Team-figure img {
   width: 220px;
+  border-radius: 50%;
 }
 .Team-twitter,
 .Team-name {
@@ -344,7 +345,7 @@ body {
 }
 .Team-role {
   color: #222;
-  font-size: 1em;
+  font-size: 0.8em;
 }
 .Footer {
   text-align: center;
