@@ -301,18 +301,26 @@ body {
 }
 @media screen and (min-width: 720px) {
   .Contact {
-    text-align: left;
+    text-align: center;
     width: 720px;
   }
 }
-.Contact-copy {
-  padding: 2em 0;
-}
 @media screen and (min-width: 720px) {
   .Contact-copy {
-    width: 50%;
-    text-align: justify;
+    text-align: center;
   }
+}
+.Hackathones {
+  margin: 0 auto;
+  padding: 3em 0;
+  background: #eaeaea;
+  text-align: center;
+}
+.SuccessCases {
+  margin: 0 auto;
+  padding: 3em 0;
+  background: #eaeaea;
+  text-align: center;
 }
 .Team {
   margin: 0 auto;
