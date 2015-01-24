@@ -18,37 +18,35 @@ body
 	width 100%
 
 .row-header
-	background url('../img/bg_header.jpg') no-repeat
+	background linear-gradient(150deg, rgba(191, 44, 21, 0.7) 30%, rgba(219, 60, 48, 0.6) 70%), url('../img/bg_header.jpg')
+	background-position center top
 	background-size cover
 
 .row-contact
-	background url('../img/bg_footer.jpg') no-repeat
+	background linear-gradient(150deg, rgba(69, 69, 69, 0.3) 30%, rgba(153, 153, 153, 0.3) 70%), url('../img/bg_footer.jpg')
 	background-size cover
 
 .Header
 	text-align center
 	height auto
 	margin 0 auto
-	padding 2em 3em
+	padding .5em 3em
 	color hl_white
-	@media screen and (min-width 720px)
+	@media screen and (min-width 990px)
 		text-align left
-		height 300px
+		height 340px
 		width 720px
 
+.Header-title
+	display none
 
 .Header-logo
+	margin .5em 0 0 0
+	padding 0
+	width 220px
 	display inline-block
-	width 300px
-	text-indent -9999px
-	background url('../img/logo.png') no-repeat
-	margin 0 0 1em 1em
-	position absolute
-	left 0
-	@media screen and (min-width 720px)
-		position relative
-		margin 0
-
+	img
+		width 100%
 
 .Header-nav
 	ul
@@ -175,8 +173,6 @@ body
 		transition 1s color
 		&:hover
 			color hl_black
-	@media screen and (min-width 720px)
-		float left
 
 .btn
 	border 1px solid hl_white
@@ -190,8 +186,8 @@ body
 	transition 1s color
 	margin 0 auto
 	&:hover
-		color hl_red
-		background-color hl_white
+		color hl_white
+		background-color hl_red
 	@media screen and (min-width 720px)
 		padding .75em 5.4em
 
@@ -199,6 +195,12 @@ body
 .btn-black
 	border 0
 	background hl_black
+	padding .75em 3em
+
+.btn-red
+	border 0
+	background hl_white
+	color hl_red
 	padding .75em 3em
 
 .text-red
