@@ -379,6 +379,33 @@ body {
   background: #eaeaea;
   text-align: center;
 }
+.Hack-event {
+  display: inline-block;
+}
+@media screen and (min-width: 720px) {
+  .Hack-event {
+    vertical-align: top;
+    width: 48%;
+  }
+}
+.Hack-event-media {
+  width: 300px;
+}
+.Hack-event-media img {
+  width: 100%;
+  border-radius: 5px;
+}
+@media screen and (min-width: 720px) {
+  .Hack-event-media {
+    width: 80%;
+  }
+}
+.Hack-event-title {
+  background: #222;
+  color: #f3f3f3;
+  padding: 0.5em 3em;
+  border-radius: 5px;
+}
 .Team {
   margin: 0 auto;
   padding: 3em 0;
