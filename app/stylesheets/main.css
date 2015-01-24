@@ -198,6 +198,16 @@ body {
   font-size: 16px;
   background-color: #f3f3f3;
 }
+.center {
+  display: block !important;
+  width: 50%;
+}
+@media screen and (min-width: 990px) {
+  .center {
+    display: inline-block !important;
+    width: 195px;
+  }
+}
 .row {
   width: 100%;
 }
@@ -219,7 +229,7 @@ body {
 @media screen and (min-width: 720px) {
   .Header {
     text-align: left;
-    height: 400px;
+    height: 300px;
     width: 720px;
   }
 }
@@ -266,10 +276,11 @@ body {
 }
 .Header-copy {
   padding: 2em 0;
-  text-align: justify;
+  text-align: center;
 }
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 990px) {
   .Header-copy {
+    text-align: justify;
     width: 50%;
     padding: 2em 0 1em 0;
   }
@@ -277,7 +288,7 @@ body {
 .Header-figure-laptop {
   display: none;
 }
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 990px) {
   .Header-figure-laptop {
     display: inline-block;
     position: relative;
@@ -332,7 +343,7 @@ body {
   display: inline-block;
 }
 .Team-figure img {
-  width: 220px;
+  width: 200px;
   border-radius: 50%;
 }
 .Team-twitter,

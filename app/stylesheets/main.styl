@@ -7,6 +7,13 @@ body
 	font-size 16px
 	background-color hl_white
 
+.center
+	display block !important
+	width 50%
+	@media screen and (min-width 990px)
+		display inline-block !important
+		width 195px
+
 .row
 	width 100%
 
@@ -26,7 +33,7 @@ body
 	color hl_white
 	@media screen and (min-width 720px)
 		text-align left
-		height 400px
+		height 300px
 		width 720px
 
 
@@ -68,15 +75,16 @@ body
 
 .Header-copy
 	padding 2em 0
-	text-align justify
+	text-align center
 
-	@media screen and (min-width 720px)
+	@media screen and (min-width 990px)
+		text-align justify
 		width 50%
 		padding 2em 0 1em 0
 
 .Header-figure-laptop
 	display none
-	@media screen and (min-width 720px)
+	@media screen and (min-width 990px)
 		display inline-block
 		position relative
 		left 50%
@@ -99,7 +107,6 @@ body
 		width 720px
 
 .Contact-copy
-	//tpadding 2em 0
 	@media screen and (min-width 720px)
 		text-align center
 
@@ -124,7 +131,7 @@ body
 .Team-figure
 	display inline-block
 	img
-		width 220px
+		width 200px
 		border-radius 50%
 
 .Team-twitter, .Team-name
